@@ -1,0 +1,289 @@
+/* Enhanced Quotation Management System Styles */
+/* Modern CSS3 Features with Cross-browser Compatibility */
+
+/* Advanced Grid Animations */
+.grid-row-enter {
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
+.grid-row-hover {
+    animation: glow 0.3s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(116, 185, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(116, 185, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(116, 185, 255, 0.5);
+    }
+}
+
+/* Enhanced Modal Backdrop */
+.modal-backdrop-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    z-index: 1040;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Advanced Button Hover Effects */
+.action-btn-3d {
+    position: relative;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.action-btn-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.action-btn-3d:hover::before {
+    transform: translateX(100%);
+}
+
+.action-btn-3d:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Pulse Animation for Important Actions */
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+    }
+}
+
+/* Enhanced Data Visualization */
+.data-cell-highlight {
+    position: relative;
+    overflow: hidden;
+}
+
+.data-cell-highlight::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(116, 185, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.data-cell-highlight:hover::after {
+    left: 100%;
+}
+
+/* Status Indicators */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.active {
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    color: white;
+}
+
+.status-badge.pending {
+    background: linear-gradient(135deg, #fdcb6e, #f39c12);
+    color: white;
+}
+
+.status-badge.closed {
+    background: linear-gradient(135deg, #636e72, #2d3436);
+    color: white;
+}
+
+/* Loading States */
+.btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Enhanced Tooltips */
+.tooltip-custom {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip-custom::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.tooltip-custom::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.tooltip-custom:hover::before,
+.tooltip-custom:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .quotation-container {
+        background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+    }
+    
+    .main-content {
+        background: rgba(45, 52, 54, 0.95);
+        color: #ddd;
+    }
+    
+    #OrderHeaderGrid th {
+        background: linear-gradient(135deg, #636e72, #2d3436);
+    }
+    
+    #OrderHeaderGrid tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .quotation-container {
+        background: white !important;
+    }
+    
+    .action-btn,
+    .training-video-btn,
+    .btn-primary-custom {
+        display: none !important;
+    }
+    
+    .grid-container {
+        box-shadow: none !important;
+    }
+}
+
+/* High DPI Display Support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .action-btn {
+        border: 0.5px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Accessibility Enhancements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus Indicators for Keyboard Navigation */
+.action-btn:focus,
+.btn-primary-custom:focus {
+    outline: 3px solid #74b9ff;
+    outline-offset: 2px;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
