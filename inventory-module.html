@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management Module - ERPro Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-cogs"></i>
+                    <span>ERPro Solutions</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#modules">Modules</a></li>
+                    <li><a href="index.html#industries">Industries</a></li>
+                    <li><a href="index.html#clients">Clients</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#faqs">FAQs</a></li>
+                    <li><a href="index.html#demo" class="demo-btn">Request Demo</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Module Hero Section -->
+    <section class="module-hero">
+        <div class="container">
+            <div class="module-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> 
+                    <a href="index.html#modules">Modules</a> <i class="fas fa-chevron-right"></i>
+                    <span>Inventory Management</span>
+                </div>
+                <h1><i class="fas fa-warehouse"></i> Inventory Management Module</h1>
+                <p>Transform your inventory operations with real-time tracking, automated processes, and intelligent analytics. Our comprehensive inventory management system ensures optimal stock levels, reduces costs, and improves operational efficiency.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="number">95%</span>
+                        <span class="label">Inventory Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">40%</span>
+                        <span class="label">Cost Reduction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">60%</span>
+                        <span class="label">Time Savings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="module-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Inventory Features</h2>
+                <p>Everything you need to manage your inventory efficiently and effectively</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-barcode"></i>
+                    </div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Monitor inventory levels in real-time with barcode scanning, RFID integration, and automated data capture systems.</p>
+                    <ul>
+                        <li>Barcode & QR code scanning</li>
+                        <li>RFID technology support</li>
+                        <li>Mobile device integration</li>
+                        <li>Real-time updates</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Gain insights with powerful analytics, demand forecasting, and intelligent reporting capabilities.</p>
+                    <ul>
+                        <li>Demand forecasting</li>
+                        <li>ABC analysis</li>
+                        <li>Turnover reports</li>
+                        <li>Custom dashboards</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Automated Reordering</h3>
+                    <p>Set up intelligent reorder points, automated purchase orders, and supplier management systems.</p>
+                    <ul>
+                        <li>Smart reorder points</li>
+                        <li>Automated PO generation</li>
+                        <li>Supplier integration</li>
+                        <li>Lead time optimization</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Multi-Location Management</h3>
+                    <p>Manage inventory across multiple warehouses, stores, and locations with centralized control.</p>
+                    <ul>
+                        <li>Multi-warehouse support</li>
+                        <li>Inter-location transfers</li>
+                        <li>Location-specific reporting</li>
+                        <li>Centralized dashboard</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Quality Control</h3>
+                    <p>Implement comprehensive quality control measures with batch tracking and expiration management.</p>
+                    <ul>
+                        <li>Batch/lot tracking</li>
+                        <li>Expiration date management</li>
+                        <li>Quality inspection workflows</li>
+                        <li>Compliance reporting</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Access</h3>
+                    <p>Access inventory data on-the-go with our mobile-optimized interface and native apps.</p>
+                    <ul>
+                        <li>Mobile web interface</li>
+                        <li>Native iOS/Android apps</li>
+                        <li>Offline capability</li>
+                        <li>Real-time synchronization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="module-benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Benefits of Our Inventory Management System</h2>
+                    <div class="benefit-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>
+                            <h4>Reduce Inventory Costs</h4>
+                            <p>Optimize stock levels and reduce carrying costs by up to 30% with intelligent inventory management.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Improve Operational Efficiency</h4>
+                            <p>Streamline processes and reduce manual work with automated workflows and real-time data.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Enhance Accuracy</h4>
+                            <p>Eliminate human errors and ensure 99%+ inventory accuracy with automated tracking systems.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>Better Decision Making</h4>
+                            <p>Make informed decisions with real-time analytics, forecasting, and comprehensive reporting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-image">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-header">
+                            <h4>Inventory Dashboard</h4>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="widget">
+                                <i class="fas fa-boxes"></i>
+                                <span>Total Items: 2,485</span>
+                            </div>
+                            <div class="widget">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Low Stock: 23</span>
+                            </div>
+                            <div class="widget">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Turnover: 5.2x</span>
+                            </div>
+                            <div class="widget">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Value: $1.2M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Applications -->
+    <section class="industry-applications">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industry-Specific Applications</h2>
+                <p>Tailored solutions for different manufacturing sectors</p>
+            </div>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <i class="fas fa-industry"></i>
+                    <h3>Manufacturing</h3>
+                    <p>Raw materials tracking, work-in-progress management, and finished goods inventory with production integration.</p>
+                </div>
+                <div class="application-card">
+                    <i class="fas fa-pills"></i>
+                    <h3>Pharmaceutical</h3>
+                    <p>Batch tracking, expiration management, regulatory compliance, and serialization for pharmaceutical products.</p>
+                </div>
+                <div class="application-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Valves & Components</h3>
+                    <p>Custom part tracking, specification management, and quality control for precision manufacturing.</p>
+                </div>
+                <div class="application-card">
+                    <i class="fas fa-spray-can"></i>
+                    <h3>Nozzles & Sprays</h3>
+                    <p>Technical specifications tracking, performance parameters, and custom configuration management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="module-integration">
+        <div class="container">
+            <div class="integration-content">
+                <div class="integration-text">
+                    <h2>Seamless Integration</h2>
+                    <p>Our inventory management module integrates seamlessly with other ERP modules and third-party systems for a complete business solution.</p>
+                    <div class="integration-list">
+                        <div class="integration-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financial Management</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Production Planning</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Supply Chain</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Procurement</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fas fa-clipboard-check"></i>
+                            <span>Quality Control</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Sales & CRM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="integration-diagram">
+                    <div class="central-module">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Inventory</span>
+                    </div>
+                    <div class="connected-modules">
+                        <div class="module production"><i class="fas fa-cogs"></i></div>
+                        <div class="module financial"><i class="fas fa-chart-line"></i></div>
+                        <div class="module supply"><i class="fas fa-truck"></i></div>
+                        <div class="module quality"><i class="fas fa-shield-alt"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Request Section -->
+    <section class="module-demo">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>See Inventory Management in Action</h2>
+                    <p>Experience the power of our inventory management system with a personalized demo tailored to your industry and requirements.</p>
+                    <ul class="demo-benefits">
+                        <li><i class="fas fa-check"></i> Live demonstration of key features</li>
+                        <li><i class="fas fa-check"></i> Industry-specific use cases</li>
+                        <li><i class="fas fa-check"></i> Q&A with our experts</li>
+                        <li><i class="fas fa-check"></i> Custom implementation planning</li>
+                    </ul>
+                </div>
+                <div class="demo-form">
+                    <form id="moduleForm">
+                        <h3>Request Inventory Management Demo</h3>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Business Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="industry" required>
+                                <option value="">Select Your Industry</option>
+                                <option value="manufacturing">General Manufacturing</option>
+                                <option value="pharmaceutical">Pharmaceutical</option>
+                                <option value="valves">Valves Industry</option>
+                                <option value="nozzles">Nozzles & Sprays</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="inventory_size" required>
+                                <option value="">Current Inventory Size</option>
+                                <option value="small">Less than 1,000 items</option>
+                                <option value="medium">1,000 - 10,000 items</option>
+                                <option value="large">10,000 - 50,000 items</option>
+                                <option value="enterprise">More than 50,000 items</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="requirements" placeholder="Specific inventory management challenges or requirements"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Modules -->
+    <section class="related-modules">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Modules</h2>
+                <p>Explore other modules that work seamlessly with Inventory Management</p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Production Planning</h3>
+                    <p>Integrate inventory with production schedules for optimal resource utilization and just-in-time manufacturing.</p>
+                    <a href="production-module.html" class="explore-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Supply Chain</h3>
+                    <p>Connect inventory management with supplier networks for automated procurement and vendor management.</p>
+                    <a href="supply-chain-module.html" class="explore-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Quality Control</h3>
+                    <p>Ensure product quality with integrated quality management and batch tracking capabilities.</p>
+                    <a href="quality-module.html" class="explore-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cogs"></i>
+                        <span>ERPro Solutions</span>
+                    </div>
+                    <p>Leading provider of comprehensive ERP solutions for manufacturing and industrial sectors.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li><a href="inventory-module.html">Inventory Management</a></li>
+                        <li><a href="financial-module.html">Financial Management</a></li>
+                        <li><a href="hr-module.html">Human Resources</a></li>
+                        <li><a href="production-module.html">Production Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">24/7 Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@erprosolutions.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ERPro Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Module-specific styles
+        const moduleStyles = document.createElement('style');
+        moduleStyles.textContent = `
+            .module-hero {
+                padding: 120px 0 80px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+            }
+            
+            .breadcrumb {
+                margin-bottom: 2rem;
+                opacity: 0.8;
+            }
+            
+            .breadcrumb a {
+                color: white;
+                text-decoration: none;
+            }
+            
+            .breadcrumb i {
+                margin: 0 0.5rem;
+                font-size: 0.8rem;
+            }
+            
+            .module-hero h1 {
+                font-size: 3rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .module-hero h1 i {
+                margin-right: 1rem;
+                color: #f39c12;
+            }
+            
+            .hero-stats {
+                display: flex;
+                gap: 3rem;
+                margin-top: 3rem;
+            }
+            
+            .hero-stats .stat {
+                text-align: center;
+            }
+            
+            .hero-stats .number {
+                display: block;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #f39c12;
+            }
+            
+            .hero-stats .label {
+                font-size: 1rem;
+                opacity: 0.9;
+            }
+            
+            .module-features {
+                padding: 6rem 0;
+                background: white;
+            }
+            
+            .features-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 2rem;
+            }
+            
+            .feature-card {
+                background: #f8f9fa;
+                border-radius: 15px;
+                padding: 2rem;
+                transition: all 0.3s ease;
+            }
+            
+            .feature-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            }
+            
+            .feature-icon {
+                width: 60px;
+                height: 60px;
+                background: linear-gradient(135deg, #3498db, #2980b9);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+            }
+            
+            .feature-icon i {
+                font-size: 1.5rem;
+                color: white;
+            }
+            
+            .feature-card ul {
+                list-style: none;
+                margin-top: 1rem;
+            }
+            
+            .feature-card li {
+                padding: 0.25rem 0;
+                position: relative;
+                padding-left: 1.5rem;
+                color: #666;
+            }
+            
+            .feature-card li::before {
+                content: '•';
+                position: absolute;
+                left: 0;
+                color: #3498db;
+                font-weight: bold;
+            }
+            
+            .module-benefits {
+                padding: 6rem 0;
+                background: #f8f9fa;
+            }
+            
+            .benefits-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+                align-items: center;
+            }
+            
+            .benefit-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .benefit-item i {
+                font-size: 1.5rem;
+                color: #27ae60;
+                margin-top: 0.25rem;
+            }
+            
+            .dashboard-preview {
+                background: white;
+                border-radius: 15px;
+                padding: 2rem;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            }
+            
+            .dashboard-header {
+                border-bottom: 1px solid #e0e0e0;
+                padding-bottom: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .dashboard-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            
+            .widget {
+                background: #f8f9fa;
+                padding: 1rem;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            
+            .widget i {
+                color: #3498db;
+            }
+            
+            .industry-applications {
+                padding: 6rem 0;
+                background: white;
+            }
+            
+            .applications-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+            }
+            
+            .application-card {
+                text-align: center;
+                padding: 2rem;
+                border-radius: 15px;
+                background: #f8f9fa;
+                transition: all 0.3s ease;
+            }
+            
+            .application-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            }
+            
+            .application-card i {
+                font-size: 3rem;
+                color: #3498db;
+                margin-bottom: 1rem;
+            }
+            
+            .module-integration {
+                padding: 6rem 0;
+                background: #f8f9fa;
+            }
+            
+            .integration-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+                align-items: center;
+            }
+            
+            .integration-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+            
+            .integration-item {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.75rem;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            .integration-item i {
+                color: #3498db;
+            }
+            
+            .integration-diagram {
+                position: relative;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .central-module {
+                width: 120px;
+                height: 120px;
+                background: linear-gradient(135deg, #3498db, #2980b9);
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: 600;
+                z-index: 2;
+            }
+            
+            .central-module i {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .connected-modules {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .connected-modules .module {
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background: white;
+                border: 3px solid #3498db;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #3498db;
+            }
+            
+            .module.production { top: 20px; left: 50%; transform: translateX(-50%); }
+            .module.financial { top: 50%; right: 20px; transform: translateY(-50%); }
+            .module.supply { bottom: 20px; left: 50%; transform: translateX(-50%); }
+            .module.quality { top: 50%; left: 20px; transform: translateY(-50%); }
+            
+            .module-demo {
+                padding: 6rem 0;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+            }
+            
+            .related-modules {
+                padding: 6rem 0;
+                background: white;
+            }
+            
+            @media (max-width: 768px) {
+                .module-hero h1 {
+                    font-size: 2rem;
+                }
+                
+                .hero-stats {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                
+                .benefits-content,
+                .integration-content {
+                    grid-template-columns: 1fr;
+                }
+                
+                .integration-list {
+                    grid-template-columns: 1fr;
+                }
+                
+                .features-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        `;
+        document.head.appendChild(moduleStyles);
+    </script>
+</body>
+</html>

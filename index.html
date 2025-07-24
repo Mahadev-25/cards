@@ -3,47 +3,492 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/mybootstrap.css">
+    <title>ERPro Solutions - Complete ERP Software for Manufacturing Industries</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card" style="width:80%">
-                <img class="card-img-top" src="Images/more1.png" alt="Card Image"> <br>
-                <div card="body" style="padding-top: 45px;">
-                    <h4 class="text-center">Duration: 6 Month <br> Level: Beginner <br>Syllabus</h4>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-cogs"></i>
+                    <span>ERPro Solutions</span>
                 </div>
-                <br>
-                
-               <center> <a href="#" class="btn btn-primary">Get More Info</a></center>
-                </div>   
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#modules">Modules</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#demo" class="demo-btn">Request Demo</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card" style="width:80%">
-                    <img class="card-img-top" src="Images/more1.png" alt="Card Image"> <br>
-                    <div card="body" style="padding-top: 45px;">
-                        <h4 class="text-center">Duration: 6 Month <br> Level: Beginner <br>Syllabus</h4>
-                    </div>
-                    <br>
-                    
-                   <center> <a href="#" class="btn btn-primary">Get More Info</a></center>
-                    </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Manufacturing Business with Our Advanced ERP Solutions</h1>
+                <p class="hero-subtitle">Comprehensive ERP software designed specifically for Manufacturing, Pharmaceutical, Valves, Nozzles, and Industrial sectors. Streamline operations, boost productivity, and drive growth.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">Request Free Demo</a>
+                    <a href="#modules" class="btn btn-secondary">Explore Modules</a>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card" style="width:80%">
-                    <img class="card-img-top" src="Images/more1.png" alt="Card Image"> <br>
-                    <div card="body" style="padding-top: 45px;">
-                        <h4 class="text-center">Duration: 6 Month <br> Level: Beginner <br>Syllabus</h4>
+            <div class="hero-image">
+                <div class="floating-cards">
+                    <div class="card manufacturing">
+                        <i class="fas fa-industry"></i>
+                        <span>Manufacturing</span>
                     </div>
-                    <br>
-                    
-                   <center> <a href="#" class="btn btn-primary">Get More Info</a></center>
+                    <div class="card pharma">
+                        <i class="fas fa-pills"></i>
+                        <span>Pharmaceutical</span>
                     </div>
+                    <div class="card valves">
+                        <i class="fas fa-tools"></i>
+                        <span>Valves & Nozzles</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    
+    </section>
+
+    <!-- Client Statistics -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Active Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Satisfaction Rate %</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">24/7 Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ERP Modules Section -->
+    <section id="modules" class="modules">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive ERP Modules</h2>
+                <p>Our complete suite of ERP modules designed to handle every aspect of your business operations</p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Inventory Management</h3>
+                    <p>Real-time inventory tracking, automated reordering, and comprehensive stock management across multiple locations.</p>
+                    <a href="inventory-module.html" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Financial Management</h3>
+                    <p>Complete accounting, budgeting, financial reporting, and compliance management for your business.</p>
+                    <a href="financial-module.html" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Human Resources</h3>
+                    <p>Employee management, payroll processing, attendance tracking, and performance evaluation systems.</p>
+                    <a href="hr-module.html" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Production Planning</h3>
+                    <p>Advanced production scheduling, resource allocation, and manufacturing workflow optimization.</p>
+                    <a href="production-module.html" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Supply Chain</h3>
+                    <p>End-to-end supply chain management, vendor relations, and procurement automation.</p>
+                    <a href="supply-chain-module.html" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Quality Control</h3>
+                    <p>Comprehensive quality assurance, testing protocols, and compliance management systems.</p>
+                    <a href="quality-module.html" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section id="industries" class="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Specialized ERP solutions tailored for diverse manufacturing and industrial sectors</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Manufacturing</h3>
+                    <p>Complete manufacturing ERP with production planning, inventory control, and quality management.</p>
+                    <ul>
+                        <li>Production Scheduling</li>
+                        <li>Material Requirements Planning</li>
+                        <li>Shop Floor Control</li>
+                        <li>Cost Management</li>
+                    </ul>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Pharmaceutical</h3>
+                    <p>FDA-compliant pharmaceutical ERP with batch tracking, regulatory compliance, and quality assurance.</p>
+                    <ul>
+                        <li>Batch Management</li>
+                        <li>Regulatory Compliance</li>
+                        <li>Quality Control</li>
+                        <li>Serialization</li>
+                    </ul>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Valves Industry</h3>
+                    <p>Specialized ERP for valve manufacturers with custom configuration, testing, and certification management.</p>
+                    <ul>
+                        <li>Custom Configuration</li>
+                        <li>Testing Protocols</li>
+                        <li>Certification Management</li>
+                        <li>Material Traceability</li>
+                    </ul>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>Nozzles & Sprays</h3>
+                    <p>Advanced ERP for nozzle manufacturers with precision engineering, quality testing, and performance tracking.</p>
+                    <ul>
+                        <li>Precision Engineering</li>
+                        <li>Performance Testing</li>
+                        <li>Design Management</li>
+                        <li>Quality Assurance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Analysis & Testimonials -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Valued Clients</h2>
+                <p>Trusted by leading companies across various industries</p>
+            </div>
+            
+            <!-- Client Logos -->
+            <div class="client-logos">
+                <div class="logo-slider">
+                    <div class="client-logo">TechManufacturing Ltd.</div>
+                    <div class="client-logo">PharmaCorplex Inc.</div>
+                    <div class="client-logo">ValveTech Solutions</div>
+                    <div class="client-logo">IndustrialNozzles Co.</div>
+                    <div class="client-logo">ManufacturingPro Ltd.</div>
+                    <div class="client-logo">QualityValves Inc.</div>
+                </div>
+            </div>
+
+            <!-- Client Testimonials -->
+            <div class="testimonials">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"ERPro Solutions transformed our manufacturing operations. We've seen a 40% increase in efficiency and significant cost savings."</p>
+                        <div class="testimonial-author">
+                            <h4>John Smith</h4>
+                            <span>CEO, TechManufacturing Ltd.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The pharmaceutical compliance features are outstanding. We achieved FDA certification faster than ever before."</p>
+                        <div class="testimonial-author">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <span>Quality Director, PharmaCorplex Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Excellent valve industry-specific features. The custom configuration management saved us countless hours."</p>
+                        <div class="testimonial-author">
+                            <h4>Mike Wilson</h4>
+                            <span>Operations Manager, ValveTech Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About ERPro Solutions</h2>
+                    <p>With over 15 years of experience in developing cutting-edge ERP solutions, ERPro Solutions has established itself as a trusted partner for manufacturing and industrial companies worldwide.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Industry Expertise</h4>
+                                <p>Deep understanding of manufacturing, pharmaceutical, and industrial processes</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Innovation Driven</h4>
+                                <p>Cutting-edge technology and continuous innovation in ERP solutions</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock technical support and customer service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-building"></i>
+                        <p>Our Team of Experts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="faqs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our ERP solutions</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What industries does your ERP software support?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our ERP software is specifically designed for manufacturing industries including pharmaceutical, valves, nozzles, automotive, and general manufacturing. We provide industry-specific modules and compliance features.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does implementation typically take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Implementation time varies based on company size and complexity. Typically, small to medium businesses can be up and running in 3-6 months, while larger enterprises may take 6-12 months for full implementation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide training and support?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide comprehensive training programs for all users, from basic operators to system administrators. We also offer 24/7 technical support and regular system updates.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is the system cloud-based or on-premise?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer both cloud-based and on-premise solutions. You can choose the deployment option that best fits your security requirements, budget, and technical infrastructure.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can the system integrate with existing software?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our ERP system features robust integration capabilities and can connect with most existing business applications, accounting software, and third-party systems through APIs and standard protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>See how our ERP solution can streamline your operations and boost productivity. Request a personalized demo today!</p>
+                    <ul class="demo-benefits">
+                        <li><i class="fas fa-check"></i> Personalized demo based on your industry</li>
+                        <li><i class="fas fa-check"></i> Free consultation with our experts</li>
+                        <li><i class="fas fa-check"></i> Custom implementation roadmap</li>
+                        <li><i class="fas fa-check"></i> ROI analysis and cost estimation</li>
+                    </ul>
+                </div>
+                <div class="demo-form">
+                    <form id="demoForm">
+                        <h3>Request Your Free Demo</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Business Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="industry" name="industry" required>
+                                <option value="">Select Your Industry</option>
+                                <option value="manufacturing">General Manufacturing</option>
+                                <option value="pharmaceutical">Pharmaceutical</option>
+                                <option value="valves">Valves Industry</option>
+                                <option value="nozzles">Nozzles & Sprays</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your specific requirements"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cogs"></i>
+                        <span>ERPro Solutions</span>
+                    </div>
+                    <p>Leading provider of comprehensive ERP solutions for manufacturing and industrial sectors. Transform your business with our cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li><a href="inventory-module.html">Inventory Management</a></li>
+                        <li><a href="financial-module.html">Financial Management</a></li>
+                        <li><a href="hr-module.html">Human Resources</a></li>
+                        <li><a href="production-module.html">Production Planning</a></li>
+                        <li><a href="supply-chain-module.html">Supply Chain</a></li>
+                        <li><a href="quality-module.html">Quality Control</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Industries</h3>
+                    <ul>
+                        <li><a href="#">Manufacturing</a></li>
+                        <li><a href="#">Pharmaceutical</a></li>
+                        <li><a href="#">Valves Industry</a></li>
+                        <li><a href="#">Nozzles & Sprays</a></li>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Chemical</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">24/7 Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">System Status</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business District, Tech City, TC 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@erprosolutions.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ERPro Solutions. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
