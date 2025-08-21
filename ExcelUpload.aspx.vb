@@ -33,7 +33,7 @@ Partial Class reports_ExcelUpload
         If Session("SessionKey") Is Nothing Then
             Response.Redirect("~/Login.aspx")
         End If
-        ConnectionString = EnterpriseCommon.Configuration.ConfigSettings.ConnectionString
+        ConnectionString = ConfigurationManager.AppSettings("ConnectionString")
         CompanyID = SessionKey("CompanyID").ToString
         DivisionID = SessionKey("DivisionID").ToString
         DepartmentID = SessionKey("DepartmentID").ToString
